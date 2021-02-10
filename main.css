@@ -8,6 +8,11 @@ h1 {
     color: green;
 }
 
+h2 {
+	font-size: 22 px;
+	color: red;
+}
+
 ul {
     font: small-caps italic 14px/1 sans-serif;
 }
@@ -17,4 +22,3 @@ p {
   border-color: violet;
   border-style: lined;
 }
-
