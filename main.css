@@ -1,24 +1,41 @@
+/* AWC Roster: Craig Chen, Weichen Liu, Vincent Zhu>
+IntroCS pd5 sec08
+HW05 - Stuylin'
+2021-02-22
+ */
+
 body {
  background-color: gray;
  font-family: "arial";
 }
+/* the background color of the text surrounded by the <body> tags is changed
+to gray and the font is changed to arial */
 
 h1 {
     font-size: 33 px;
     color: green;
 }
+/* the font size of the text surrounded by the <h1> tags is changed
+to 33 px it's color is changed to green */
 
 h2 {
 	font-size: 22 px;
 	color: red;
 }
+/* the font size of the text surrounded by the <h2> tags is changed
+to 22 px it's color is changed to red */
 
 ul {
     font: small-caps italic 14px/1 sans-serif;
 }
+/* font of the text surrounded by the <ul> tags are changed */
 
 p {
   background-color: yellow;
   border-color: violet;
-  border-style: lined;
+  border-style: dotted;
 }
+
+/* fonts surrounded by <p> tags are changed to have a background of yellow.
+The border color becomes violet and the border line style becomes dotted.
+ */
