@@ -32,9 +32,9 @@ ul {
 /* font of the text surrounded by the <ul> tags are changed */
 
 p {
-  background-color: yellow;
+  background-color: white;
   border-color: violet;
-  border-style: lined;
+  border-style: dotted;
 }
 
 /* fonts surrounded by <p> tags are changed to have a background of yellow.
