@@ -34,7 +34,7 @@ ul {
 p {
   background-color: yellow;
   border-color: violet;
-  border-style: dotted;
+  border-style: lined;
 }
 
 /* fonts surrounded by <p> tags are changed to have a background of yellow.
