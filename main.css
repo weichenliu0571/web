@@ -17,14 +17,14 @@ h1 {
     color: green;
 }
 /* the font size of the text surrounded by the <h1> tags is changed
-to 33 px it's color is changed to green */
+to 33 px and it's color is changed to green */
 
 h2 {
 	font-size: 22 px;
 	color: orange;
 }
 /* the font size of the text surrounded by the <h2> tags is changed
-to 22 px it's color is changed to orange */
+to 22 px and it's color is changed to orange */
 
 ul {
     font:  italic 15px/1 sans-serif;
