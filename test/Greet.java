@@ -1,6 +1,6 @@
 public class Greet {
   public static void main(String[] args) {
-    private String greeting;
+    String greeting;
     
     BigSib george = new BigSib();
     BigSib emily = new BigSib("Shsheesh");
