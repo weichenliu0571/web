@@ -1,5 +1,11 @@
 public class BigSib {
-  public static void greet(String name) {
-    System.out.println("Hello " + name);
-    }
+  private String helloMsg;
+  
+  public BigSib() {
+    helloMsg = "Sheesh";
+  }
+  
+  public void greet(String name) {
+    return helloMsg + " " + name
+  }
 }
