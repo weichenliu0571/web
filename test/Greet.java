@@ -1,6 +1,6 @@
 public class Greet {
   public static void main(String[] args) {
     BigSib george = new BigSib();
-    george.greet("Jeff");
+    System.out.println(george.greet("Jeff"));
   }
 }
