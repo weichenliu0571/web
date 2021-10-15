@@ -5,7 +5,7 @@ public class BigSib {
     helloMsg = "Sheesh";
   }
   
-  public void greet(String name) {
+  public String greet(String name) {
     return helloMsg + " " + name;
   }
 }
