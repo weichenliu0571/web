@@ -6,6 +6,6 @@ public class BigSib {
   }
   
   public void greet(String name) {
-    return helloMsg + " " + name
+    return helloMsg + " " + name;
   }
 }
