@@ -3,6 +3,6 @@ public class Greet {
     BigSib george = new BigSib();
     BigSib emily = new BigSib("Shsheesh");
     System.out.println(george.greet("Jeff"));
-    System.out.println(emily.greet("Faley");
+    System.out.println(emily.greet("Faley"));
   }
 }
