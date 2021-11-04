@@ -3,6 +3,7 @@ public class Greet {
     System.out.println(gcd(5,15));
     System.out.println(gcd(5,11));
     System.out.println(fenceR(3));
+    System.out.println(fenceW(3));
   }
   public static int gcd(int a, int b) {
     while (a != b) {
@@ -21,5 +22,18 @@ public class Greet {
     } else {
       return "|--" + fenceR(a - 1);
     }
+  }
+
+  public static String fenceW (int a) {
+    ans = "|";
+    counter = 1;
+    if (a < 1) {
+      return "give a positive integer input";
+    }
+
+    while (counter < a) {
+      ans = ans + "--|";
+    }
+    return ans;
   }
 }
