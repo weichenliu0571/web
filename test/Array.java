@@ -13,5 +13,6 @@ public class Array {
 				}
 				return gcd(a, b - a);
 			}
+	  }
 
 }
