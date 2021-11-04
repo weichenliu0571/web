@@ -33,6 +33,7 @@ public class Greet {
 
     while (counter < a) {
       ans = ans + "--|";
+      counter ++;
     }
     return ans;
   }
