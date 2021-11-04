@@ -13,4 +13,12 @@ public class Greet {
   }
   return a;
 }
+
+  public static String fenceR(int a) {
+    if (a == 1) {
+      return "|";
+    } else {
+      return "|--" + fenceR(a - 1);
+    }
+  }
 }
