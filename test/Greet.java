@@ -25,8 +25,8 @@ public class Greet {
   }
 
   public static String fenceW (int a) {
-    ans = "|";
-    counter = 1;
+    String ans = "|";
+    int counter = 1;
     if (a < 1) {
       return "give a positive integer input";
     }
