@@ -4,7 +4,7 @@ public class Greet {
     System.out.println(gcd(5,11));
     System.out.println(fenceR(3));
     System.out.println(fenceW(3));
-    System.out.println(countDown(4));
+    countDown(4);
   }
   public static int gcd(int a, int b) {
     while (a != b) {
