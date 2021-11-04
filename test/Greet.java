@@ -1,13 +1,12 @@
 public class Greet {
-  public static void main(String[] args) {
-    String greeting;
-    
-    BigSib george = new BigSib();
-    BigSib emily = new BigSib("Shsheesh");
-    
-    greeting = george.greet("Jeff");
-    System.out.println(greeting);
-    greeting = emily.greet("Faley");
-    System.out.println(greeting);
+  public static int gcd(int a, int b) {
+    while (a != b) {
+      if (a > b) {
+        a = a - b;
+      } else {
+        b = b - a;
+      }
   }
+  return a;
+}
 }
