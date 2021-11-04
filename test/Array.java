@@ -15,6 +15,7 @@ public class Array {
 			if (a % counter == 0 && b % counter == 0) {
 				ans = counter;
 			}
+			counter += 1;
 		}
 		return ans;
 	}
