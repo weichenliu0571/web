@@ -11,7 +11,7 @@ public class Array {
 			smaller = b;
 		}
 
-		while (counter < smaller + 1) {
+		while (counter < smaller) {
 			if (a % counter == 0 && b % counter == 0) {
 				ans = counter;
 			}
