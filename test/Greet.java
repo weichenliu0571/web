@@ -4,6 +4,7 @@ public class Greet {
     System.out.println(gcd(5,11));
     System.out.println(fenceR(3));
     System.out.println(fenceW(3));
+    System.out.println(countDown(4));
   }
   public static int gcd(int a, int b) {
     while (a != b) {
@@ -36,5 +37,14 @@ public class Greet {
       counter ++;
     }
     return ans;
+  }
+
+  public static void countDown(int a) {
+    if (a == 0) {
+      System.out.println("...LIFTOFF!");
+    } else {
+      System.out.println(a);
+      countDown(a - 1);
+    }
   }
 }
