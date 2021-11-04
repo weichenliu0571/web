@@ -9,9 +9,9 @@ public class Array {
 				return a;
 			} else {
 				if (a > b) {
-					return (b, a - b);
+					return gcd(b, a - b);
 				}
-				return (a, b - a);
+				return gcd(a, b - a);
 			}
 
 }
