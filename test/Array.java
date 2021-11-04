@@ -3,21 +3,25 @@ public class Array {
 		System.out.println(gcd(13,15));
 	}
 
-	public static int gcd(int a, int b) {
-		int counter = 0;
-		int ans = 0;
-		int smaller = a;
-		if ( b < a) {
-			smaller = b;
-		}
 
-		while (counter < smaller) {
-			if (a % counter == 0 && b % counter == 0) {
-				ans = counter;
-			}
-			counter += 1;
-		}
-		return ans;
-	}
+	  public static int gcd(int a, int b){
+      int smaller;
+      int counter = 1;
+      int accumulatedGCD = 1;
+      if (a > b){
+        smaller = b;
+      }
+      else{
+        smaller = a;
+      }
+
+      while (counter <= smaller){
+        if (a % counter == 0 && b % counter == 0){
+          accumulatedGCD = counter;
+        }
+        counter++;
+      }
+      return accumulatedGCD;
+    }
 
 }
