@@ -6,7 +6,7 @@ public class Array {
 
 	  public static int gcd(int a, int b){
       int smaller;
-      int counter = 0;
+      int counter = 1;
       int accumulatedGCD = 1;
       if (a > b){
         smaller = b;
