@@ -225,14 +225,14 @@ public class Greet {
 
 
   public static void main( String[] args ) {
-
-    for( String word : args ) {
-      System.out.println( "allVowels \t" + allVowels(word) );
-      System.out.println( "firstVowels \t" + firstVowel(word) );
-      System.out.println( "countVowels \t" + countVowels(word) );
-      System.out.println( "engToPig \t" + engToPig(word) );
-      System.out.println( "---------------------" );
-    }
+    //
+    // for( String word : args ) {
+    //   System.out.println( "allVowels \t" + allVowels(word) );
+    //   System.out.println( "firstVowels \t" + firstVowel(word) );
+    //   System.out.println( "countVowels \t" + countVowels(word) );
+    //   System.out.println( "engToPig \t" + engToPig(word) );
+    //   System.out.println( "---------------------" );
+    // }
 
   }//end main()
 
