@@ -248,7 +248,7 @@ public class Greet {
     Scanner scan = new Scanner(System.in);
     System.out.println("Please give an input in English that you want to translate to pig latin.");
     String input0 = scan.next();
-    System.out.println("Output:" + newEngToPig(input0));
+    System.out.println("Output:" + newEngtoPig(input0));
 
     //
     // for( String word : args ) {
