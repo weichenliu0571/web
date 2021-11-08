@@ -180,7 +180,7 @@ public class Greet {
       String lowerW = w.toLowerCase();
       ans = engToPig(lowerW).substring(0,1).toUpperCase() + engToPig(lowerW).substring(1);
     } else {
-      ans = engToPig(w)
+      ans = engToPig(w);
     }
 
     return ans + end;
