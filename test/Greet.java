@@ -167,6 +167,25 @@ public class Greet {
     return ans;
   }
 
+  public static String newEngtoPig( String w) {
+    String end = "";
+    String ans = "";
+
+    if (PUNCS.indexOf(w.substring( w.length() - 1, w.length() ) ) > -1){
+      end = w.substring(w.length() - 1, w.length());
+      w = w.substring(0, w.length() - 1);
+    }
+
+    if (beginsWithUpper(w)) {
+      String lowerW = w.toLowerCase();
+      ans = engToPig(lowerW).substring(0,1).toUpperCase() + engToPig(lowerW).substring(1);
+    } else {
+      ans = engToPig(w)
+    }
+
+    return ans + end;
+  }
+
   // public static String toCapitalize(String w){
   //   lowercaseW = w.toLowerCase();
   //   String pigifed;
@@ -225,8 +244,11 @@ public class Greet {
 
 
   public static void main( String[] args ) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Please give an input in English that you want to translate to pig latin.");
+    String input0 = scan.next();
+    System.out.println("Output:" + newEngToPig(input0));
 
-    System.out.println(hasPunc("hi!"));
     //
     // for( String word : args ) {
     //   System.out.println( "allVowels \t" + allVowels(word) );
