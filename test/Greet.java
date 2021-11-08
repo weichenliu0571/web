@@ -1,8 +1,8 @@
 /***
- * Clyde "Thluffy" Sinclair
+ * Aliens
  * APCS
- * HW31 -- deploying linear search on Strings, using helper methods
- * 2021-11-04r
+ * LabV0 -- Pig Latin Work
+ * 2021-11-08
  * time spent: .5hrs
  *
  * class Pig
@@ -22,6 +22,7 @@
  *      NEVER STRAY TOO FAR FROM COMPILABILITY/RUNNABILITY!
  ***/
 
+import java.util.Scanner;
 
 public class Greet {
 
