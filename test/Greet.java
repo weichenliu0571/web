@@ -199,8 +199,8 @@ public class Greet {
     /*=====================================
       boolean hasPunc(String) -- tells whether a String contains punctuation
       pre:  w != null
-      post: hasPunc(“cat.”) -> true
-            hasPunc(“cat”) -> false
+      post: hasPunc("cat.") -> true
+            hasPunc("cat") -> false
       =====================================*/
     public static boolean hasPunc( String w ) {
       for (int counter = 0; counter < w.length(); counter++){
@@ -225,6 +225,8 @@ public class Greet {
 
 
   public static void main( String[] args ) {
+
+    System.out.println(hasPunc("hi!"));
     //
     // for( String word : args ) {
     //   System.out.println( "allVowels \t" + allVowels(word) );
