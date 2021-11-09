@@ -9,7 +9,7 @@
  * - scan.next() checks for the next word in the input.
  *
  * QCC
- * - How do we create a while loop that goes through every word in the input that we give scanner?
+ * - What is the most efficient loop that goes through every word in the input that we give scanner?
  *
  * class Pig
  * a Pig Latin translator
@@ -28,12 +28,12 @@
  *      NEVER STRAY TOO FAR FROM COMPILABILITY/RUNNABILITY!
  ***/
 
+
 import java.util.Scanner;
 
-public class Greet {
+public class Pig {
 
   private static final String VOWELS = "aeiouy";
-  private static final String VOWELSWOY = "aeiou";
   private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   private static final String PUNCS = ".,:;!?";
 
@@ -148,49 +148,7 @@ public class Greet {
     beginsWithVowel("strong") --> false
     **/
   public static boolean beginsWithVowel( String w ) {
-    return VOWELSWOY.indexOf( w.substring(0,1) ) != -1;
-  }
-
-
-  /**
-    String engToPig(String) -- converts an English word to Pig Latin
-    pre:  w.length() > 0
-    post: engToPig("apple")  --> "appleway"
-    engToPig("strong") --> "ongstray"
-    engToPig("java")   --> "avajay"
-    **/
-  public static String engToPig( String w ) {
-
-    String ans = "";
-
-    if ( beginsWithVowel(w) )
-      ans = w + "way";
-
-    else {
-      int vPos = w.indexOf( firstVowel(w) );
-      ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
-    }
-
-    return ans;
-  }
-
-  public static String newEngtoPig( String w) {
-    String end = "";
-    String ans = "";
-
-    if (isPunc(w.substring( w.length() - 1, w.length() ) ) ){
-      end = w.substring(w.length() - 1, w.length());
-      w = w.substring(0, w.length() - 1);
-    }
-
-    if (beginsWithUpper(w)) {
-      String lowerW = w.toLowerCase();
-      ans = engToPig(lowerW).substring(0,1).toUpperCase() + engToPig(lowerW).substring(1);
-    } else {
-      ans = engToPig(w);
-    }
-
-    return ans + end;
+    return VOWELS.indexOf( w.substring(0,1) ) != -1;
   }
 
   // public static String toCapitalize(String w){
@@ -249,24 +207,62 @@ public class Greet {
 	     return isUpperCase(w.substring(0,1) );
     }
 
+    /**
+      String engToPig(String) -- converts an English word to Pig Latin
+      pre:  w.length() > 0
+      post: engToPig("apple")  --> "appleway"
+      engToPig("strong") --> "ongstray"
+      engToPig("java")   --> "avajay"
+      **/
+    public static String engToPig( String w ) {
 
-  public static void main( String[] args ) {
-    String output = "";
-    Scanner scan = new Scanner(System.in);
-    System.out.println("Please give an input in English that you want to translate to pig latin:");
-    System.out.print(newEngtoPig(scan.next()));
-    while (scan.next().length() > 0) {
-      System.out.print(" " + newEngtoPig(scan.next()));
+      String ans = "";
+
+      if ( beginsWithVowel(w) && (!(w.substring(0,1).equals("y"))) )
+        ans = w + "way";
+
+      else {
+        int vPos = w.indexOf( firstVowel(w.substring(1)) );
+        ans = w.substring(vPos) + w.substring(0,vPos) + "ay";
+      }
+
+      return ans;
     }
 
-    //
-    // for( String word : args ) {
-    //   System.out.println( "allVowels \t" + allVowels(word) );
-    //   System.out.println( "firstVowels \t" + firstVowel(word) );
-    //   System.out.println( "countVowels \t" + countVowels(word) );
-    //   System.out.println( "engToPig \t" + engToPig(word) );
-    //   System.out.println( "---------------------" );
-    // }
+    public static String newEngtoPig( String w) {
+    String end = "";
+    String ans = "";
+
+    if (PUNCS.indexOf(w.substring( w.length() - 1, w.length() ) ) > -1){ // checks for presence of punctuation
+      end = w.substring(w.length() - 1, w.length());
+      w = w.substring(0, w.length() - 1);
+    }
+
+    if (beginsWithUpper(w)) {
+      String lowerW = w.toLowerCase();
+      ans = engToPig(lowerW).substring(0,1).toUpperCase() + engToPig(lowerW).substring(1);
+    } else {
+      ans = engToPig(w);
+    }
+
+    return ans + end;
+    }
+
+
+    public static void main( String[] args ) {
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Please give an input in English that you want to translate to pig latin.");
+      String input = scan.next();
+      System.out.println("Output: " + newEngtoPig(input));
+
+      //
+      // for( String word : args ) {
+      //   System.out.println( "allVowels \t" + allVowels(word) );
+      //   System.out.println( "firstVowels \t" + firstVowel(word) );
+      //   System.out.println( "countVowels \t" + countVowels(word) );
+      //   System.out.println( "engToPig \t" + engToPig(word) );
+      //   System.out.println( "---------------------" );
+      // }
 
   }//end main()
 
