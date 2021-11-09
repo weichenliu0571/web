@@ -256,7 +256,7 @@ public class Greet {
     System.out.println("Please give an input in English that you want to translate to pig latin:");
     System.out.print(newEngtoPig(scan.next()));
     while (scan.next().length() > 0) {
-      System.out.print(" " + newEngtoPig(scan.next()))
+      System.out.print(" " + newEngtoPig(scan.next()));
     }
 
     //
