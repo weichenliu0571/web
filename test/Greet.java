@@ -1,9 +1,15 @@
 /***
- * Aliens
+ * Aliens ( Weichen Liu + Blueface, Brian Li + Robert, Lior Polischouk + Toothless)
  * APCS
- * LabV0 -- Pig Latin Work
+ * Lab v0 -- Pig Latin Work
  * 2021-11-08
  * time spent: .5hrs
+ *
+ * DISCO
+ * - scan.next() checks for the next word in the input.
+ *
+ * QCC
+ * - How do we create a while loop that goes through every word in the input that we give scanner?
  *
  * class Pig
  * a Pig Latin translator
@@ -172,7 +178,7 @@ public class Greet {
     String end = "";
     String ans = "";
 
-    if (PUNCS.indexOf(w.substring( w.length() - 1, w.length() ) ) > -1){
+    if (isPunc(w.substring( w.length() - 1, w.length() ) ) ){
       end = w.substring(w.length() - 1, w.length());
       w = w.substring(0, w.length() - 1);
     }
@@ -245,10 +251,13 @@ public class Greet {
 
 
   public static void main( String[] args ) {
+    String output = "";
     Scanner scan = new Scanner(System.in);
-    System.out.println("Please give an input in English that you want to translate to pig latin.");
-    String input0 = scan.next();
-    System.out.println("Output:" + newEngtoPig(input0));
+    System.out.println("Please give an input in English that you want to translate to pig latin:");
+    System.out.print(newEngtoPig(scan.next()));
+    while (scan.next().length() > 0) {
+      System.out.print(" " + newEngtoPig(scan.next()))
+    }
 
     //
     // for( String word : args ) {
