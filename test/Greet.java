@@ -31,7 +31,7 @@
 
 import java.util.Scanner;
 
-public class Pig {
+public class Greet {
 
   private static final String VOWELS = "aeiouy";
   private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
