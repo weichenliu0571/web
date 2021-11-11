@@ -8,5 +8,6 @@ public class Greet {
       p+=1;
       q+=1;
     }
+    System.out.println(sum);
   }
 }
