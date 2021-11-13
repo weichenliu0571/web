@@ -41,7 +41,7 @@
     public static int freq( int[] a, int target ) {
       int answer = 0;
       int counter = 0;
-      while (counter < int.length - 1) {
+      while (counter < a.length - 1) {
         if (a[counter] == target) {
           answer ++;
         }
