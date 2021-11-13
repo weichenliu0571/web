@@ -43,7 +43,7 @@
       int counter = 0;
       while (counter < int.length - 1) {
         if (a[counter] == target) {
-          answer ++
+          answer ++;
         }
         counter ++;
       }
