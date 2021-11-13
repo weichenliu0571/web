@@ -60,7 +60,7 @@
     }
 
     public static int freqR( int[] a, int target) {
-      return helperFreqR(int [] a, int target, 0, 0);
+      return helperFreqR(a, target, 0, 0);
     }
 
     public static int helperFreqR(int[] a, int target, int counter, int freq) {
