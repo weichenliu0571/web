@@ -43,7 +43,7 @@
        return counter; // returns  counter if target was found in array
      }
      else {
-       return (helperSearchR(a, target, counter + 1)); // recursion continues until target is found, or the array is completely parsed through
+       return helperSearchR(a, target, counter + 1); // recursion continues until target is found, or the array is completely parsed through
      }
    }
 
@@ -59,12 +59,28 @@
       return answer;
     }
 
+    public static int freqR( int[] a, int target) {
+      return helperFreqR(int [] a, int target, 0, 0);
+    }
+
+    public static int helperFreqR(int[] a, int target, int counter, int freq) {
+      if (counter == a.length) {
+        return freq;
+      } else {
+        if (a[counter] == target) {
+          return helperFreqR(a, target, counter + 1, freq + 1);
+        }
+        return helperFreqR(a, target, counter + 1, freq);
+      }
+    }
+
 
     public static void main(String[] args) {
       int[] local = arrayRandInts(5);
       System.out.println("Testing printing the string: " + strArrayInts(local));
       System.out.println("Testing looking for an index of an int in the string: " + linSearch(local, 5));
-      System.out.println("Testing looking for an index of an int in the string: " + linSearchR(local, 5));
+      System.out.println("Testing looking for an index of an int in the string using recursion: " + linSearchR(local, 5));
       System.out.println("Testing looking for a frequency of an int in the string: " + freq(local, 5));
+      System.out.println("Testing looking for a frequency of an int in the string using recursion: " + freqR(local, 5));
     }
 }
