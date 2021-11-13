@@ -43,7 +43,7 @@
        return counter; // returns  counter if target was found in array
      }
      else {
-       return (helperSearchR(a, target, counter ++)); // recursion continues until target is found, or the array is completely parsed through
+       return (helperSearchR(a, target, counter + 1)); // recursion continues until target is found, or the array is completely parsed through
      }
    }
 
