@@ -53,8 +53,8 @@
 
     public static void main(String[] args) {
       int[] local = arrayRandInts(5);
-      System.out.println(strArrayInts(local));
-      System.out.println(linSearch(local, 5));
-      System.out.println(freq(local, 5));
+      System.out.println("Testing printing the string:" + strArrayInts(local));
+      System.out.println("Testing looking for an index of an int in the string:" + linSearch(local, 5));
+      System.out.println("Testing looking for a frequency of an int in the string:" + freq(local, 5));
     }
 }
