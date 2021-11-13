@@ -32,7 +32,7 @@
 
 
     public static int linSearchR(int[] a, int target) {
-      return helperSearchR(int[] a, int target, 0);
+      return helperSearchR(a , target, 0);
   }
 
    public static int helperSearchR(int[] a, int target, int counter) {
