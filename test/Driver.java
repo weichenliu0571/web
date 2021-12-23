@@ -1,5 +1,5 @@
 public class Driver implements InterTrash{
-  public void sleep(int b ) {
+  public static void sleep(int b ) {
     System.out.println(b);
   }
 

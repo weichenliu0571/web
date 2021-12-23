@@ -1,5 +1,5 @@
 public class InterTrash {
-  public void sleep(String a);
-  public void eat(int b);
+  public static void sleep(String a);
+  public static void eat(int b);
 
 }
