@@ -1,3 +1,18 @@
+/*
+Big Apples (Weichen Liu + Blueface, Jeffrey Tang + , Lior + )
+APCS
+HW34 -- Looping to find the index and frequency of a string
+2021-11-13
+time spent: .8 hours
+
+
+DISCO
+- 
+
+QCC
+-
+*/
+
   import java.lang.Math;
 
   public class Greet {
@@ -78,9 +93,9 @@
     public static void main(String[] args) {
       int[] local = arrayRandInts(5);
       System.out.println("Testing printing the string: " + strArrayInts(local));
-      System.out.println("Testing looking for an index of an int in the string: " + linSearch(local, 5));
-      System.out.println("Testing looking for an index of an int in the string using recursion: " + linSearchR(local, 5));
-      System.out.println("Testing looking for a frequency of an int in the string: " + freq(local, 5));
-      System.out.println("Testing looking for a frequency of an int in the string using recursion: " + freqR(local, 5));
+      System.out.println("Testing looking for an index of an int(5) in the string: " + linSearch(local, 5));
+      System.out.println("Testing looking for an index of an int(5) in the string using recursion: " + linSearchR(local, 5));
+      System.out.println("Testing looking for a frequency of an int(5) in the string: " + freq(local, 5));
+      System.out.println("Testing looking for a frequency of an int(5) in the string using recursion: " + freqR(local, 5));
     }
 }
