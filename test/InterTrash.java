@@ -1,4 +1,4 @@
 public interface InterTrash {
-  public void sleep(int b);
+  public static void sleep(int b);
 
 }
