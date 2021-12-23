@@ -1,10 +1,10 @@
-public class Driver {
+public class Driver implements InterTrash{
   public void sleep(int b ) {
-    return b;
+    System.out.println(b);
   }
 
   public static void main(String[] args) {
-    System.out.println(sleep(5));
+    sleep(5);
   }
 
 }
