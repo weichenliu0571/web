@@ -50,3 +50,4 @@ public class InterTrash {
      System.out.println(result);
 
 }
+}
