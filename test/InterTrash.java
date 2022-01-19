@@ -2,6 +2,12 @@ public class InterTrash {
   private static int[][] board = new int[9][9];
 
   public static void main(String[] args) {
+    for (int i = 0; i < 9; i++) {
+       for (int j =0; j < 9; j++){
+         board[i][j] = j;
+       }
+       wonBoards[i] = false;
+     }
     String result = "";
       for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
