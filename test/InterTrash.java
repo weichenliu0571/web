@@ -10,8 +10,9 @@ public class InterTrash {
     String result = "";
       for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-          result += board[i][j] + "|";
+          result += board[i][j];
         }
+        result += "|";
       }
       for (int i = 0; i < 3; i++) {
         for (int j = 3; j < 6; j++) {
