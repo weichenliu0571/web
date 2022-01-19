@@ -6,7 +6,6 @@ public class InterTrash {
        for (int j =0; j < 9; j++){
          board[i][j] = j;
        }
-       wonBoards[i] = false;
      }
     String result = "";
       for (int i = 0; i < 3; i++) {
