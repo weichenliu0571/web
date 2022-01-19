@@ -19,7 +19,7 @@ public class InterTrash {
         }
       }
       for (int i = 3; i < 6; i++) {
-        for (j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++) {
           result += board[i][j];
         }
       }
